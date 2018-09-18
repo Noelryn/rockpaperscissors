@@ -1,16 +1,16 @@
-###A Rock, Paper, Scissors game
+A Rock, Paper, Scissors game
 - Wrote in JavaScript
 - Tested With npm
 - deployed using Github pages
 
-----------------------------
-##User Stories
+-------------------------------------
+User Stories
 
 
 As a player,
 I would like a rock, paper, scissors game to play on a web app.
 
-###Tasks
+Tasks
 - Create a deployed website
 - Create a functional web app for the rock, paper scissors game
 
@@ -19,7 +19,7 @@ As a player,
 
 - In order to do so, I would like it to be easy to understand
 
-###Tasks
+Tasks
 
 - Create a button for rock
 - Create a button for paper
@@ -29,7 +29,7 @@ As a player,
 - I would like to have an oppenonent to play against.
 - In order to do so the game would need a computer opponent.
 
-###Tasks
+Tasks
 - Create a method to randomly return rock, paper or scissor.
 
 
@@ -37,7 +37,7 @@ As a player,
 - I would like to have a display that shows my input and my opponents input,
 - I would also like to see a win or lose result
 
-###Tasks
+Tasks
 
 - Create a box that shows players results.
 - Create a box that shows opponents results.
@@ -49,7 +49,7 @@ As an owner,
 - In order to do this it needs to be a fully functional web app with a computer opponent.
 - I would like it to have a fun colourful stylish theme.
 
-###Tasks
+Tasks
 
 - Create a rock, paper, scissor game
 - Create three funtional buttons
