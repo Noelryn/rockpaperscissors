@@ -1,0 +1,1 @@
+const { RockpaperScissors } = require( '.spec.helper')
