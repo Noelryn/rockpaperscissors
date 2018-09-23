@@ -1,9 +1,11 @@
-const { rockPaperScissor } = require( '.spec.helper')
+const { RockPaperScissors } = require( './spec.helper')
 
 describe('Rock Paper Scissors', () => {
-    let rockPaperScissor = new RockPaperScissor
+    let rps = new rockPaperScissors
+});
+
+it('returns a tie when objects the same', () => {
+    expect(rps.compare('rock', 'rock')).to.eq("TIE!")
 })
 
-it('returns try again if player loses', () => {
-    expect(rockPaperScissor.check(rock)).to eql(paper)
-})
+it 
