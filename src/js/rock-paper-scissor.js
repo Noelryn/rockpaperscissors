@@ -1,7 +1,7 @@
 function RockPaperScissors() {
-    this.compare = (a, b) => {
-        if (a === b) {
+    this.compare = (rock, rock) => {
+        if (rock === rock) {
             return "TIE!"
         }
-    }
+    }   
 }

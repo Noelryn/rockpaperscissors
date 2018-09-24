@@ -2,5 +2,5 @@ const  fs = require('fs');
 const  chai = require('chai');
 global.expect = chai.expect;
 
-let rockPaperScissor = fs.readFileSync('./src/js/rock-paper-scissor.js');
-eval( rockPaperScissor + `\nexports.RockPaperScissor = rockPaperScissor;`)
+let rockPaperScissors = fs.readFileSync('./src/js/rock-paper-scissors.js');
+eval( rockPaperScissors + `\nexports.rockPaperScissors = rockPaperScissors;`)
