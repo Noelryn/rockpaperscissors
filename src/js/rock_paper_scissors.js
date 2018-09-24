@@ -13,6 +13,11 @@ function RockPaperScissors() {
                 return "Rock beats scissors";
             }
         }
+        if (choice1 === "scissors") {
+            if(choice2 === "paper") {
+                return "Scissors beats paper";
+            }
+        }
     }
 }
 
