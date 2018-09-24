@@ -8,6 +8,11 @@ function RockPaperScissors() {
                 return "Paper beats rock";
             }
         }
+        if (choice1 === "rock") {
+            if(choice2 === "scissors") {
+                return "Rock beats scissors";
+            }
+        }
     }
 }
 
