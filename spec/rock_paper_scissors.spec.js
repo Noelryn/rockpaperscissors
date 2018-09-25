@@ -7,15 +7,20 @@ describe('Rock Paper Scissor', () => {
         expect(rps.check("rock", "rock")).to.eq("TIE!");
     })
 
-    it('should return paper beats rock', () => {
-        expect(rps.check("paper", "rock")).to.eq("Paper beats rock")
+    it('should return win against rock', () => {
+        expect(rps.check("paper", "rock")).to.eq("Winner winner chicken dinner!")
     })
 
-    it('should return rock beats scissors', () => {
-        expect(rps.check("rock", "scissors")).to.eq("Rock beats scissors")
+    it('should return Winner winner chicken dinner!', () => {
+        expect(rps.check("rock", "scissors")).to.eq("Winner winner chicken dinner!")
     })
 
-    it('should return scissors beats paper', () => {
-        expect(rps.check("scissors", "paper")).to.eq("Scissors beats paper")
+    it('should return Winner winner chicken dinner!', () => {
+        expect(rps.check("scissors", "paper")).to.eq("Winner winner chicken dinner!")
     })
+
+    it('should return you lose when against rock', () => {
+        expect(rps.check("rock", "paper")).to.eq("Loser!");
+    })
+
 });
