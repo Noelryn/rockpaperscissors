@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RockPaperScissors</title>
+    <script src="src/js/rock_paper_scissors.js"></script>
+    <script src="src/js/choice.js"></script>
 
     
 </head>
@@ -12,34 +14,16 @@
         <h1>Rock, Paper, Scissors</h1>
 
         <div class="game">
-        
             <script>
-            // User choice
-        var userChoice = prompt("FIGHT!");
-        if (! userChoice) {
-            document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
-        } else {
-            document.write("<p>Player 1:" + " " + userChoice + "</p>");
-        }
-                let computerChoice = Math.random();
-                if (computerChoice < 0.34) {
-                    computerChoice = "rock";
-                }  if (computerChoice <= 0.67) {
-                    computerChoice = "paper";
+                let userChoice = prompt("FIGHT!");
+                if (! userChoice) {
+                    document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
                 } else {
-                    computerChoice = "scissors";
+                    document.write("<p>Player 1:" + " " + userChoice + "</p>");
                 }
-                
-        
-        let results = compare(userChoice,computerChoice);
-        
-        document.write("<br><hr><br>" + results);
-
-        </script>
-        
+            </script>
         </div>
 
 </body>
 
-<script src="src/js/rock_paper_scissors.js"></script>
 </html>

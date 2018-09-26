@@ -1,3 +1,5 @@
+require('.src/js/choice.js')
+
 function RockPaperScissors() {
     this.check = (choice1, choice2) => {
         if (choice1 === choice2) {
@@ -27,6 +29,9 @@ function RockPaperScissors() {
                 return "Loser!";
             }
         }
+        
+        let results = compare(userChoice,computerChoice);
+        document.write("<br><hr><br>" + results);
     }
 }
 
