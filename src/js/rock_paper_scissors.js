@@ -29,8 +29,8 @@ function RockPaperScissors() {
                 return "Loser!";
             }
         }
-        
-        let results = compare(userChoice,computerChoice);
+
+        let results = check(userChoice,computerChoice);
         document.write("<br><hr><br>" + results);
     }
 }

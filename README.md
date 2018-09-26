@@ -60,3 +60,15 @@ As an owner,
 - Add a computer opponent
 - Add a colourful stylish theme
 
+<h1>Rock, Paper, Scissors</h1>
+
+        <div class="game">
+            <script>
+                let userChoice = prompt("FIGHT!");
+                if (! userChoice) {
+                    document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
+                } else {
+                    document.write("<p>Player 1:" + " " + userChoice + "</p>");
+                }
+            </script>
+        </div>
