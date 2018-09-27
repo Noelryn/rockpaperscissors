@@ -1,39 +1,11 @@
-require('.src/js/choice.js')
-
-function RockPaperScissors() {
-    this.check = (choice1, choice2) => {
-        if (choice1 === choice2) {
-            return "TIE!";
-        }
-
-        if (choice1 === "rock") {
-            if (choice2 === "scissors") {
-                return "Winner winner chicken dinner!";
-            } else {
-                return "Loser!";
-            }
-        }
-
-        if (choice1 === "paper") {
-            if (choice2 === "rock") {
-                return "Winner winner chicken dinner!";
-            } else {
-                return "Loser!";
-            }
-        }
-
-        if (choice1 === "scissors") {
-            if (choice2 === "rock") {
-                return "Winner winner chicken dinner!";
-            } else {
-                return "Loser!";
-            }
-        }
-
-        let results = check(userChoice,computerChoice);
-        document.write("<br><hr><br>" + results);
-    }
-}
-
+const userScore = 0;
+const computerScore =0;
+const userScore_span = document.getElementById("user-score");
+const computerScore_span = document.getElementById("computer-score");
+const scoreBoard_div = document.querySelector(".score-board");
+const result_div = document.querySelector(".result");
+const rock_div = document.getElementById("r");
+const paper_div = document.getElementById("p");
+const scissors_div = document.getElementById("s");
 
 

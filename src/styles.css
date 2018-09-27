@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(165, 165, 238);
+    background-color: blueviolet
 }
 
 header{
@@ -15,7 +15,7 @@ header{
 }
 
 header > h1 {
-    color: black;
+    color:  blueviolet;
     text-align: center;
     font-family: Asap, sans-serif;
 }
@@ -70,7 +70,7 @@ header > h1 {
 
 .choice{
     border: 4px solid white;
-    border-radius: 50%;
+    border-radius: 12px;
     margin: 0 20px;
     padding: 10px;
     display: inline-block;
@@ -78,7 +78,7 @@ header > h1 {
 
 .choice:hover {
     cursor: pointer;
-    background: rgb(87, 87, 235);
+    background: rgb(199, 107, 46);
 }
 
 #action-message {
@@ -86,7 +86,7 @@ header > h1 {
     color: white;
     font-family: Asap, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 50px;
     margin-top: 20px;
 }
 
