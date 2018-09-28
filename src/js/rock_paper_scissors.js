@@ -14,7 +14,6 @@ function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
-console.log(getComputerChoice());
 
 function RockPaperScissors() {
     this.compare = (userChoice, computerChoice) => {
@@ -47,22 +46,20 @@ function RockPaperScissors() {
         }
     
     }
+function game() {
+    rock_div.addEventListener('click', function () {
+        game("rock");
+    })
 
-        rock_div.addEventListener('click', function () {
-            game("rock");
-        })
+    paper_div.addEventListener('click', function () {
+        game("paper");
+    })
 
-        paper_div.addEventListener('click', function () {
-            game("paper");
-        })
-
-        scissors_div.addEventListener('click', function () {
-            game("scissors");
-        })
+    scissors_div.addEventListener('click', function () {
+        game("scissors");
+    })
 
     let result = compare(userScore, computerScore);
         document.write("<br><hr><br>" + result);
+    }
 }
-
-
-
