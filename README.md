@@ -68,3 +68,4 @@ As an owner,
 - https://stackoverflow.com/questions/26091954/how-to-add-images-to-rock-paper-scissors-game
 - https://gist.github.com/joshfry/7327656
 - https://github.com/bartek7/rock-paper-scissors/tree/master/js
+- https://www.w3schools.com
