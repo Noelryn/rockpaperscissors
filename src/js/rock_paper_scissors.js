@@ -1,65 +1,26 @@
-let userScore = 0;
-let computerScore =0;
-let rock_div = document.getElementById("rock");
-let paper_div = document.getElementById("paper");
-let scissors_div = document.getElementById("scissors");
-const userScore_span = document.getElementById("user-score");
-const computerScore_span = document.getElementById("computer-score");
-const scoreBoard_div = document.querySelector(".score-board");
-const result_p = document.querySelector(".result");
-
-
-function getComputerChoice() {
-    const choices = ['rock', 'paper', 'scissors'];
-    const randomNumber = Math.floor(Math.random() * 3);
-    return choices[randomNumber];
-}
-
-function RockPaperScissors() {
-    this.compare = (userChoice, computerChoice) => {
-        if (userChoice === computerChoice) {
-            return "TIE!";
-        }
-
-        if (userChoice === "rock") {
-            if (computerChoice === "scissors") {
-                return "Winner winner chicken dinner!";
+function RockPaperScissors()  {
+    this.compare = (com, player) => {
+        if (com == player) {
+            return 'TIE!!!'; 
+        } else if (com == 'rock'){
+            if (player == 'scissors') {
+            return 'rock Wins';
             } else {
-                return "Loser!";
+            return 'Loser!';
+            }
+
+        } else if (com == 'paper') {
+            if (player == 'rock'){
+                return 'paper Wins';
+            } else {
+                return 'Loser!';
+            }
+        }  else if (com == 'scissors') {
+            if (player == 'paper') {
+                return 'scissors win';
+            } else {
+                return 'Loser!';
             }
         }
-
-        if (userChoice === "paper") {
-            if (computerChoice === "rock") {
-                return "Winner winner chicken dinner!";
-            } else {
-                return "Loser!";
-            }
-        }
-
-        if (userChoice === "scissors") {
-            if (computerChoice === "rock") {
-                return "Winner winner chicken dinner!";
-            } else {
-                return "Loser!";
-            }
-        }
-    
     }
-function game() {
-    rock_div.addEventListener('click', function () {
-        game("rock");
-    })
-
-    paper_div.addEventListener('click', function () {
-        game("paper");
-    })
-
-    scissors_div.addEventListener('click', function () {
-        game("scissors");
-    })
-
-    let result = compare(userScore, computerScore);
-        document.write("<br><hr><br>" + result);
-    }
-}
+};

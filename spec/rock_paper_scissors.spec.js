@@ -1,26 +1,33 @@
 const { RockPaperScissors } = require('./spec.helper')
 
-describe('Rock Paper Scissor', () => {
-    let rps = new RockPaperScissors
-
+describe('Rock Paper Scissor', function() {
+    let rps = new RockPaperScissors();
+  
     it('should return a tie when same object', () => {
-        expect(rps.check("rock", "rock")).to.eq("TIE!");
+        expect(rps.compare('paper', 'paper')).to.eq("TIE!!!");
     })
 
-    it('should return win against rock', () => {
-        expect(rps.check("paper", "rock")).to.eq("Winner winner chicken dinner!")
-    })
-
-    it('should return Winner winner chicken dinner!', () => {
-        expect(rps.check("rock", "scissors")).to.eq("Winner winner chicken dinner!")
-    })
-
-    it('should return Winner winner chicken dinner!', () => {
-        expect(rps.check("scissors", "paper")).to.eq("Winner winner chicken dinner!")
+    it('should return rock wins when against scissors', () => {
+        expect(rps.compare("rock", "scissors")).to.eq("rock Wins");
     })
 
     it('should return you lose when against rock', () => {
-        expect(rps.check("rock", "paper")).to.eq("Loser!");
+        expect(rps.compare("rock", "paper")).to.eq("Loser!");
     })
 
-});
+    it('should return paper wins when against rock', () => {
+        expect(rps.compare("paper", "rock")).to.eq("paper Wins");
+    })
+
+    it('should return you lose when against paper', () => {
+        expect(rps.compare("paper", "scissors")).to.eq("Loser!");
+    })
+
+    it('should return scissors wins when against paper', () => {
+        expect(rps.compare("paper", "rock")).to.eq("paper Wins");
+    })
+
+    it('should return you lose when against paper', () => {
+        expect(rps.compare("paper", "scissors")).to.eq("Loser!");
+    })
+})

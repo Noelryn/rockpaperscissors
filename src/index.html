@@ -6,41 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
     <title>RockPaperScissors</title>
-    <link rel="stylesheet" href="styles.css">  
     <script src="./js/rock_paper_scissors.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Rock Paper Scissors</h1>
-    </header>
-    <div class="score-board">
-        <div id="user-label" class ="badge">user</div>
-        <div id="computer-label" class ="badge">computer</div>
-        <span id="user-score">0</span><span id="computer-score">0</span>        
-    </div>
-    
-    <div class="result">
-        <p>Winner Winner Chicken Dinner!</p>
-    </div>
-
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="images/rock.png" alt="">
-        </div>
-
-        <div class="choice" id="paper">
-            <img src="images/paper.png" alt="">
-        </div>
-
-        <div class="choice" id="scissors">
-            <img src="images/scissors.png" alt="">
-        </div>
-    </div>
-
-    <p id="action-message">Fight!</p>
    
-</body>
-</html>
+    <div>          
+        <input placeholder="lowercase only" type="text" id="choice">
+    </div>
 
+    <input type="submit" value="Try your luck" id="button">
     
+   <div id="computerMove"></div>
+   <div id="result"></div>  
+
+   <script>
+   // here im adding an addEventListener() method to the submit input to attach an event handler to it
+   // on this case, when user 'click'(this is the event) on "try your luck" I want it, 
+   // first, to set the user input as value of the variable "usermove"
+   // second, to execute the function RockPaperScissors and finally compare the two values.
+   document.addEventListener('DOMContentLoaded', () => {
+    let button = document.getElementById('button')
+        button.addEventListener('click', () => {
+            let userMove = document.getElementById('choice').value
+    // Here i'm setting the values for the variable computerMove using the Math.random() function
+    // the function returns a random number from 0-.99, and since I want 3 values(rock, scissors, paper)
+    // im dividing it to 3. When it's lower then 0.34, it's rock, when (<=) less than or equal to 0.67, it's scissors
+    let computerMove = Math.random();
+        if(computerMove < .34) {
+            computerMove = "rock";
+        } else if(computerMove <= .67) {
+            computerMove = "scissors";
+        } else {
+            computerMove = "paper";
+        };
+        document.getElementById("computerMove").innerHTML = computerMove;
+        let rps = new RockPaperScissors;
+        let result = rps.compare(userMove, computerMove);
+        document.getElementById("result").innerHTML = result;
+        
+        })
+    })
+   </script>
+</body>
+
+</html>
