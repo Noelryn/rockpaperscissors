@@ -5,34 +5,34 @@
 }
 
 body {
-    background-color: blueviolet
+    background-color: rgb(151, 96, 202)
 }
 
 header > h1 {
-    color:  #29bb9b;
-    padding: 50px;
+    color:  #851709;
+    padding: 20px;
     text-align: center;
     font-family: Asap, sans-serif;
 }
 
 .comchoice{
     background-color: lightgrey;
-    
+    position:center;
     top: 50%;
     left: 50%;
     margin-top: 50px;
-    margin-left: -600px;
-    background-color: lightgrey;
-    height:200px;
-    width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
+    margin-left: 555px;
+    height: 125px;
+    width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 15px solid rgb(15, 214, 91);
+    margin: 25;
     font-size: 25px;
     color: black;
     text-align: center;
     font-weight: bold;
-    font-family: Asap, sans-serif;
+    font-family: Asap, comic-sans;
 }
 
 .buttons{
@@ -41,6 +41,7 @@ header > h1 {
 }
 
 .button{
+    background-color: rgb(97, 143, 241);
     border: 4px solid white;
     border-radius: 12px;
     margin: 0 20px;
@@ -50,7 +51,7 @@ header > h1 {
 
 .button:hover {
     cursor: pointer;
-    background: rgb(122, 204, 160);
+    background: rgb(15, 214, 91);
 }
 
 
