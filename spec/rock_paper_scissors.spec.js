@@ -8,7 +8,7 @@ describe('Rock Paper Scissor', function() {
     })
 
     it('should return rock wins when against scissors', () => {
-        expect(rps.compare("rock", "scissors")).to.eq("rock Wins");
+        expect(rps.compare("rock", "scissors")).to.eq("Rock Wins");
     })
 
     it('should return you lose when against rock', () => {
@@ -16,7 +16,7 @@ describe('Rock Paper Scissor', function() {
     })
 
     it('should return paper wins when against rock', () => {
-        expect(rps.compare("paper", "rock")).to.eq("paper Wins");
+        expect(rps.compare("paper", "rock")).to.eq("Paper Wins");
     })
 
     it('should return you lose when against paper', () => {
