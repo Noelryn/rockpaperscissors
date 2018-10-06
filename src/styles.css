@@ -5,70 +5,43 @@
 }
 
 body {
-    background-color: blueviolet
-}
-
-header{
-    background: white;
-    padding: 20px; 
-    
+    background-color: rgb(151, 96, 202)
 }
 
 header > h1 {
-    color:  blueviolet;
+    color:  #851709;
+    padding: 20px;
     text-align: center;
     font-family: Asap, sans-serif;
 }
 
-.score-board {
-    margin: 20px auto;
-    border: 3px solid white;
-    border-radius: 4px;
-    text-align: center;
-    width: 200px;
-    color: white;
-    font-size: 46px;
-    padding: 15px 20px;
-    font-family: Asap, sans-serif;
-    position: relative;
-}
-.badge {
-    background: lightcoral;
-    color: white;
-    font-size: 14px;
-    padding: 2px 10px;
-    font-family: Asap, sans-serif;
-}
-
-#user-label {
-    position: absolute;
-    top: 30px;
-    left: -25px;
-}
-
-#computer-label {
-    position: absolute;
-    top: 30px;
-    right: -50px;
-}
-
-.result{
-    font-size: 40px;
-    color:white;
-}
-
-.result > p{
+.comchoice{
+    background-color: lightgrey;
+    position:center;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: 555px;
+    height: 125px;
+    width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 15px solid rgb(15, 214, 91);
+    margin: 25;
+    font-size: 25px;
+    color: black;
     text-align: center;
     font-weight: bold;
-    font-family: Asap, sans-serif;
+    font-family: Asap, comic-sans;
 }
 
-.choices{
-    margin-top: 50px;
+.buttons{
+    margin-top: 100px;
     text-align: center;
 }
 
-.choice{
+.button{
+    background-color: rgb(97, 143, 241);
     border: 4px solid white;
     border-radius: 12px;
     margin: 0 20px;
@@ -76,17 +49,9 @@ header > h1 {
     display: inline-block;
 }
 
-.choice:hover {
+.button:hover {
     cursor: pointer;
-    background: rgb(122, 204, 160);
+    background: rgb(15, 214, 91);
 }
 
-#action-message {
-    text-align: center;
-    color: white;
-    font-family: Asap, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 20px;
-}
 

@@ -59,3 +59,13 @@ As an owner,
 - Create three funtional buttons
 - Add a computer opponent
 - Add a colourful stylish theme
+
+## Referances
+
+- https://stackoverflow.com/questions/17976883/rock-paper-scissors-in-javascript
+- https://www.youtube.com/watch?v=qipq1BV5myU
+- https://codepen.io/cliff538/pen/aHxfr
+- https://stackoverflow.com/questions/26091954/how-to-add-images-to-rock-paper-scissors-game
+- https://gist.github.com/joshfry/7327656
+- https://github.com/bartek7/rock-paper-scissors/tree/master/js
+- https://www.w3schools.com
