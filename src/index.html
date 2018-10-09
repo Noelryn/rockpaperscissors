@@ -13,7 +13,7 @@
     <h1>FIGHT!</h1>
 
     <div class= "comchoice">
-    <div class= "text-center font-mono" id="result"></div>
+    <div class= "text-center font-Sans-serif" id="result"></div>
     </div>
     
     </header>
@@ -33,29 +33,32 @@
         </div>
 
     </div>
-    <div class= "text-center font-mono" id="result"></div>
+    <div class= "text-center font-Sans-serif" id="result"></div>
 
 
 <script type='text/javascript'  src="./js/rock_paper_scissors.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => { 
-        let game = new RockPaperScissors 
-        let rock = document.querySelector('#rock') 
-        let paper = document.querySelector('#paper') 
-        let scissors = document.querySelector('#scissors')
-        let displayDiv = document.querySelector('#result')
+        let rps = new RockPaperScissors 
+        let rock = document.getElementById('rock') 
+        let paper = document.getElementById('paper') 
+        let scissors = document.getElementById('scissors')
+        let displayDiv = document.getElementById('result')
 
         rock.addEventListener('click', () => { 
-            let res = game.play("rock")
-            displayDiv.innerHTML = res;
+            let result = rps.play("rock")
+            let value = document.getElementById('rock').value
+            displayDiv.innerHTML = result;
         })
         paper.addEventListener('click', () => { 
-            let res = game.play("paper")
-            displayDiv.innerHTML = res;
+            let result = rps.play("paper")
+            let value = document.getElementById('paper').value
+            displayDiv.innerHTML = result;
         })
         scissors.addEventListener('click', () => { 
-            let res = game.play("scissors")
-            displayDiv.innerHTML = res;
+            let result = rps.play("scissors")
+            let value = document.getElementById('scissors').value
+            displayDiv.innerHTML = result;
         })
     })
 </script>  

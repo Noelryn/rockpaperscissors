@@ -68,4 +68,7 @@ As an owner,
 - https://stackoverflow.com/questions/26091954/how-to-add-images-to-rock-paper-scissors-game
 - https://gist.github.com/joshfry/7327656
 - https://github.com/bartek7/rock-paper-scissors/tree/master/js
+- https://discuss.codecademy.com/t/project-rock-p-s-userchoice-is-not-a-function/134834
 - https://www.w3schools.com
+- https://www.w3schools.com/js/js_switch.asp
+- https://class.craftacademy.co/courses/course-v1:CraftAcademy+CA-CC-01+2018/courseware/7cbce7a004d94b2e90b339363a4f931d/f33aadbfb9944608a432af5a7211dd27/?activate_block_id=block-v1%3ACraftAcademy%2BCA-CC-01%2B2018%2Btype%40sequential%2Bblock%40f33aadbfb9944608a432af5a7211dd27
