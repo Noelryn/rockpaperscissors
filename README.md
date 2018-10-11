@@ -72,3 +72,6 @@ As an owner,
 - https://www.w3schools.com
 - https://www.w3schools.com/js/js_switch.asp
 - https://class.craftacademy.co/courses/course-v1:CraftAcademy+CA-CC-01+2018/courseware/7cbce7a004d94b2e90b339363a4f931d/f33aadbfb9944608a432af5a7211dd27/?activate_block_id=block-v1%3ACraftAcademy%2BCA-CC-01%2B2018%2Btype%40sequential%2Bblock%40f33aadbfb9944608a432af5a7211dd27
+- https://www.npmjs.com/package/jest-mock-random
+- https://codereview.stackexchange.com/questions/184731/testing-random-number-generator-function
+- https://stackoverflow.com/questions/41570273/how-to-test-a-function-that-output-is-random-using-jest

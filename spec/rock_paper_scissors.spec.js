@@ -7,7 +7,7 @@ describe('Rock Paper Scissor', function() {
     let rps = new RockPaperScissors();
 
     it('should return "WINNER!! The Computer choose paper"', () => {
-            expect(rps.play("scissors")).to.eql("WINNER!! The Computer choose paper")
+        expect(rps.play("scissors")).to.eql("WINNER!! The Computer choose paper")
     })
 
     it('should return "LOSER! The Computer choose paper"', () => {
